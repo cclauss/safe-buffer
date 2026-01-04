@@ -42,7 +42,7 @@ test('SafeBuffer.alloc(number) returns zeroed-out memory', function (t) {
 })
 
 test('SafeBuffer.allocUnsafe(number)', function (t) {
-  var buf = SafeBuffer.allocUnsafe(100) // unitialized memory
+  var buf = SafeBuffer.allocUnsafe(100) // uninitialized memory
   t.equal(buf.length, 100)
   t.equal(SafeBuffer.isBuffer(buf), true)
   t.equal(Buffer.isBuffer(buf), true)
